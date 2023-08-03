@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🍝 Favorite Restaurant Challenge</title>
+    <meta
+      name="description"
+      content="Find a front-end and web developer based in Italy. Check out the Restaurant project coded by Elmina Jamalova."
+    />
+    <title>🍝 Restaurant page - Elmina Jamalova</title>
     <script
       src="https://kit.fontawesome.com/3fda5d8325.js"
       crossorigin="anonymous"
@@ -21,257 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inconsolata:wght@400&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        margin: 0 auto;
-        height: 100%;
-        font-family: "Inconsolata", sans-serif;
-        line-height: 1.5;
-        background-color: #fcf7ee;
-      }
-      h1 {
-        font-size: 40px;
-        font-weight: bold;
-        color: #ffffff;
-        text-align: center;
-        padding: 70px;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        margin-top: auto;
-        text-shadow: #000 0px 0px 10px;
-      }
-      form {
-        margin-right: 8px;
-      }
-      footer {
-        width: 101%;
-        background-color: #faefda;
-        padding: 48px 0;
-        text-align: center;
-        font-size: 15px;
-      }
-      a {
-        color: #000;
-        text-decoration: underline;
-        text-decoration-color: #fb692a;
-      }
-      a:hover {
-        color: #fb692a;
-      }
-      .teahouse {
-        font-size: 20px;
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 0%;
-        letter-spacing: 3px;
-      }
-      .top {
-        top: 0;
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-      }
-      .col.s3 {
-        width: 25%;
-      }
-      .col,
-      .half,
-      .third,
-      .twothird,
-      .threequarter,
-      .quarter {
-        float: left;
-        width: 100%;
-      }
-      .black {
-        color: #fff;
-        background-color: #000;
-        padding: 5px;
-        font-size: 16px;
-      }
-      .block {
-        display: block;
-        width: 100%;
-      }
-      .button {
-        border: none;
-        padding: 5px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap;
-      }
-      .button:hover {
-        text-decoration: none;
-        color: #000;
-        background-color: #ccc;
-      }
-      .bgimg {
-        background-position: center;
-        background-size: cover;
-        width: 101%;
-        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/742/original/Navat-Almaty-16.jpg?1681328739");
-        padding: 10px 15px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-          0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        margin-bottom: 10px;
-      }
-      img,
-      .carousel-inner {
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-          0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      }
-      .schedule {
-        background-color: #000;
-        color: #fff;
-        padding: 3px;
-        float: left;
-        font-size: smaller;
-        margin-right: 10px;
-        margin-left: 5px;
-      }
-      .address {
-        margin-left: 10px;
-        margin-right: 5px;
-        color: #fff;
-        padding: 3px;
-        float: right;
-        font-size: smaller;
-        text-shadow: #000 0px 0px 10px;
-      }
-      .container {
-        margin: 0 auto;
-      }
-      .content {
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        letter-spacing: 1px;
-        word-spacing: 2px;
-        font-size: larger;
-      }
-      .title {
-        background-color: #000;
-        color: #fff;
-        padding: 5px 10px;
-        font-size: 17px;
-        word-spacing: 2px;
-        letter-spacing: 4px;
-        text-align: center;
-        font-family: "Segoe UI", Arial, sans-serif;
-        font-weight: 400;
-      }
-      .title-padding-50 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-      .title-center {
-        text-align: center;
-      }
-      .products {
-        border-left: 6px solid #ccc;
-        background-color: #f1f1f1;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        line-height: 2;
-        letter-spacing: 1px;
-        word-spacing: 2px;
-      }
-      .menu-card {
-        margin: auto;
-        margin-bottom: 2px;
-        padding: 10px;
-        padding-top: 8px;
-        padding-bottom: 35px;
-        display: block;
-        text-align: center;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-          0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      }
-      .menu-col {
-        color: #000;
-        width: 50%;
-        float: left;
-      }
-      .menu-col:hover {
-        color: #000;
-        background-color: transparent;
-      }
-      .menu-text-grey {
-        color: #6f6e6e;
-        font-size: 16px;
-      }
-      .menu-col.active {
-        background-color: #616161;
-        color: #fff;
-      }
-      .menu {
-        padding: 20px;
-      }
-      .carousel-inner {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .carousel-control-prev,
-      .carousel-control-next {
-        z-index: 0;
-      }
-      .google-map {
-        padding-bottom: 50%;
-        z-index: 0;
-        position: relative;
-        margin-bottom: 40px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-          0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      }
-      .google-map iframe {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-      }
-      .tag {
-        background-color: #000;
-        color: #fff;
-        padding: 3px;
-        padding-left: 8px;
-        padding-right: 5px;
-        text-align: center;
-      }
-      .navat-input {
-        padding: 16px 0 16px 8px;
-        line-height: 1.5;
-        display: block;
-        width: 100%;
-        border: 1px solid #ccc;
-        font-size: 15px;
-      }
-      .navat-button {
-        color: #fff;
-        background-color: #000;
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap;
-        padding: 15px;
-        margin-bottom: 20px;
-      }
-      .navat-button:hover {
-        color: #000;
-        background-color: #ccc;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
   </head>
   <body>
     <!-- Links on top -->
@@ -330,8 +84,9 @@
           >
         </p>
         <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/741/original/Navat-Almaty-6.jpg?1681328727"
+          src="images/about.jpg"
           style="width: 100%; max-width: 1000px"
+          alt="Restaurant picture"
         />
       </div>
     </div>
@@ -425,25 +180,13 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/737/original/menu1.png?1681328630"
-                class="d-block w-100"
-                alt="food"
-              />
+              <img src="images/menu-1.png" class="d-block w-100" alt="food" />
             </div>
             <div class="carousel-item">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/739/original/menu2.png?1681328702"
-                class="d-block w-100"
-                alt="food"
-              />
+              <img src="images/menu-2.png" class="d-block w-100" alt="food" />
             </div>
             <div class="carousel-item">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/740/original/menu3.jpg?1681328715"
-                class="d-block w-100"
-                alt="food"
-              />
+              <img src="images/menu-3.jpg" class="d-block w-100" alt="food" />
             </div>
           </div>
           <a
@@ -497,7 +240,7 @@
           <strong>Reserve</strong> a table, ask for today's special or just send
           us a message:
         </p>
-        <form action="/action_page.php" target="_blank">
+        <form>
           <p>
             <input
               class="navat-input"
@@ -523,7 +266,7 @@
               placeholder="Date and time"
               required
               name="date"
-              value="2023-04-15T20:00"
+              value="2023-08-15T20:00"
             />
           </p>
           <p>
@@ -549,43 +292,13 @@
       <p>
         Coded by 👩🏻‍💻
         <a
-          href="https://www.linkedin.com/in/elmina-jamal-7a87071a1/"
+          href="https://www.linkedin.com/in/elmina-jamal"
           target="_blank"
+          title="LinkedIn Profile"
           >Elmina Jamalova</a
         >
       </p>
     </footer>
-    <script>
-      function openMenu(evt, menuName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("menu");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(menuName).style.display = "block";
-        evt.currentTarget.firstElementChild.className += " active";
-      }
-      document.getElementById("myLink").click();
-
-      function send() {
-        let nameInput = document.querySelector(".navat-input");
-
-        if (nameInput.value) {
-          alert(
-            `${nameInput.value}, thanks for the message. We look forward to welcoming you!😍`
-          );
-        } else {
-          alert("Please, fill out the form.🙂");
-        }
-      }
-      let sendMessageButton = document.querySelector("#navat-button");
-      sendMessageButton.addEventListener("click", send);
-      console.log(sendMessageButton);
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -601,5 +314,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,245 @@
+body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  line-height: 1.5;
+  background-color: #fcf7ee;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 70px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: auto;
+  text-shadow: #000 0px 0px 10px;
+}
+form {
+  margin-right: 8px;
+}
+footer {
+  width: 101%;
+  background-color: #faefda;
+  padding: 48px 0;
+  text-align: center;
+  font-size: 15px;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #fb692a;
+}
+a:hover {
+  color: #fb692a;
+}
+.teahouse {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0%;
+  letter-spacing: 3px;
+}
+.top {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.col.s3 {
+  width: 25%;
+}
+.col,
+.half,
+.third,
+.twothird,
+.threequarter,
+.quarter {
+  float: left;
+  width: 100%;
+}
+.black {
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  font-size: 16px;
+}
+.block {
+  display: block;
+  width: 100%;
+}
+.button {
+  border: none;
+  padding: 5px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.button:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: #ccc;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  width: 101%;
+  background-image: url("../images/navat.jpg");
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+}
+img,
+.carousel-inner {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.schedule {
+  background-color: #000;
+  color: #fff;
+  padding: 3px;
+  float: left;
+  font-size: smaller;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.address {
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #fff;
+  padding: 3px;
+  float: right;
+  font-size: smaller;
+  text-shadow: #000 0px 0px 10px;
+}
+.container {
+  margin: 0 auto;
+}
+.content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: larger;
+}
+.title {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 17px;
+  word-spacing: 2px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+.title-padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.title-center {
+  text-align: center;
+}
+.products {
+  border-left: 6px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  line-height: 2;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.menu-card {
+  margin: auto;
+  margin-bottom: 2px;
+  padding: 10px;
+  padding-top: 8px;
+  padding-bottom: 35px;
+  display: block;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.menu-col {
+  color: #000;
+  width: 50%;
+  float: left;
+}
+.menu-col:hover {
+  color: #000;
+  background-color: transparent;
+}
+.menu-text-grey {
+  color: #6f6e6e;
+  font-size: 16px;
+}
+.menu-col.active {
+  background-color: #616161;
+  color: #fff;
+}
+.menu {
+  padding: 20px;
+}
+.carousel-inner {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 0;
+}
+.google-map {
+  padding-bottom: 50%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.tag {
+  background-color: #000;
+  color: #fff;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 5px;
+  text-align: center;
+}
+.navat-input {
+  padding: 16px 0 16px 8px;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.navat-button {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.navat-button:hover {
+  color: #000;
+  background-color: #ccc;
+}
